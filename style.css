@@ -1,0 +1,111 @@
+/* 1. Design du Body */
+body {
+  background-color: #F7F9FC; 
+  color: #575E75;           
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;         
+  margin: 0;
+  padding: 40px;
+}
+
+/* 2. LE CONTAINER */
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+/* 3. LA CARTE BLANCHE */
+.card-white {
+  background-color: white;
+  padding: 40px;
+  margin: 20px 0;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+
+/* 4. CLASSES RÉUTILISABLES */
+.text-center {
+  text-align: center;
+}
+
+.img-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #DA0812; /* Bordure rouge OL */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* 5. Design des Titres */
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #12233F; /* Bleu marine OL pour les titres */
+  letter-spacing: 1px;
+}
+
+h1 { font-size: 32px; font-weight: 900; }
+h2 { font-size: 24px; font-weight: 500; margin-top: 30px; }
+
+/* 6. Design des Liens et du Bouton OL */
+a {
+  color: #DA0812; /* Rouge OL pour les liens */
+  text-decoration: none;    
+  transition: all 0.3s ease; 
+  font-weight: bold;
+}
+
+a:hover { color: #12233F; }
+
+.btn-blue {
+  background-color: #DA0812; /* Rouge OL */
+  color: white !important;  
+  padding: 15px 25px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn-blue:hover {
+  background-color: #12233F; /* Devient bleu marine au survol */
+  transform: scale(1.05);
+}
+
+/* 7. Réseaux Sociaux */
+.list-inline {
+  list-style: none;
+  padding: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.list-inline i {
+  font-size: 30px;
+  color: #12233F; /* Icônes en bleu marine */
+}
+
+.list-inline i:hover {
+  color: #DA0812; /* Icônes deviennent rouges au survol */
+}
+
+/* --- 8. RESPONSIVE DESIGN --- */
+
+@media (max-width: 960px) {
+  .container { width: 700px; }
+}
+
+@media (max-width: 720px) {
+  .container { width: 500px; }
+}
+
+@media (max-width: 540px) {
+  .container { width: 300px; }
+  h1 { font-size: 24px; }
+  .img-circle { width: 120px; height: 120px; }
+}
+}
